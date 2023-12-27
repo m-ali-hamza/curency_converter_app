@@ -141,7 +141,7 @@ class _UsdToAnyState extends State<UsdToAny> {
                   fontSize: 18),
             ),
             Text(
-              "${usdController.text} * ${double.parse(widget.rates[dropdownValue].toStringAsFixed(2))} = $usdAmount $dropdownValue",
+              "${usdController.text} USD * ${double.parse(widget.rates[dropdownValue].toStringAsFixed(2))} $dropdownValue = $usdAmount $dropdownValue",
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(

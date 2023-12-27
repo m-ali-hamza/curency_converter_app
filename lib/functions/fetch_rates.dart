@@ -17,13 +17,12 @@ Future<CurrencyRatesModel> fetchRates() async {
   }
 }
 
-Future<CurrenciesModel> fetchCurrencies() async {
+Future<Map<String, dynamic>> fetchCurrencies() async {
   try {
     String url = "https://openexchangerates.org/api/currencies.json";
     final data = await http.get(Uri.parse(url));
     final result = jsonDecode(data.body);
-    print(result);
-    return CurrenciesModel.fromJson(result);
+    return result;
   } catch (e) {
     throw Exception(e);
   }

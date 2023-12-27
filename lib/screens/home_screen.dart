@@ -28,30 +28,66 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Colors.grey.shade800,
       appBar: AppBar(
         backgroundColor: Colors.grey.shade900,
-        title: const Text(
-          "Curency Converter",
-          style: TextStyle(color: Colors.white),
+        iconTheme: IconThemeData(color: Colors.grey.shade300),
+        title: Text(
+          'Convert Currencies',
+          style: TextStyle(
+            color: Colors.grey.shade300, // Set the color to your desired color
+            fontSize: 16.0,
+            fontWeight: FontWeight.bold,
+          ),
         ),
-        centerTitle: true,
       ),
       body: SingleChildScrollView(
-          child: FutureBuilder<CurrencyRatesModel>(
-        future: result,
-        builder: ((context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
-          } else if (snapshot.hasError) {
-            return Center(child: Text(snapshot.error.toString()));
-          } else {
-            return Column(children: [
-              UsdToAny(rates: snapshot.data!.rates),
-              const SizedBox(
-                height: 30,
-              ),
-              AnyToAny(rates: snapshot.data!.rates),
-            ]);
-          }
-        }),
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          SizedBox(
+            height: 20,
+          ),
+          FutureBuilder<CurrencyRatesModel>(
+            future: result,
+            builder: ((context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.waiting) {
+                return Center(
+                    child: CircularProgressIndicator(
+                  color: Colors.grey.shade300,
+                ));
+              } else if (snapshot.hasError) {
+                return Center(
+                    child: Column(
+                  children: [
+                    Icon(
+                      Icons.error,
+                      size: 70,
+                      color: Colors.grey.shade300,
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    TextButton(
+                        onPressed: () {
+                          setState(() {});
+                        },
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.grey.shade300,
+                        ),
+                        child: const Text("Click to Retry"))
+                  ],
+                ));
+              } else {
+                return Column(children: [
+                  UsdToAny(rates: snapshot.data!.rates),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  AnyToAny(rates: snapshot.data!.rates),
+                ]);
+              }
+            }),
+          ),
+        ],
       )),
     );
   }

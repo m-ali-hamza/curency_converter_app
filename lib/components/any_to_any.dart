@@ -33,7 +33,7 @@ class _AnyToAnyState extends State<AnyToAny> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Center(
-              child: Text("USD to Any Currency",
+              child: Text("Any to Any Currency",
                   style: TextStyle(
                       color: Colors.grey.shade300,
                       fontWeight: FontWeight.bold,
