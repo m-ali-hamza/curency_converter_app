@@ -14,11 +14,10 @@ This Flutter app allows users to convert currencies easily.
 
 ## Screens Shots
 ![Capture](https://github.com/m-ali-hamza/curency_converter_app/assets/144528212/11bf2aeb-2420-4f58-9b89-838bab92359a)
-![WhatsApp Image 2023-12-27 at 6 01 43 PM](https://github.com/m-ali-hamza/curency_converter_app/assets/144528212/1d66d73e-13da-461b-ac7f-c0efacf36c51)
-![WhatsApp Image 2023-12-27 at 6 01 42 PM](https://github.com/m-ali-hamza/curency_converter_app/assets/144528212/ded6be35-9f6f-4dd4-a835-f17f8a03afda)
-![WhatsApp Image 2023-12-27 at 6 01 44 PM](https://github.com/m-ali-hamza/curency_converter_app/assets/144528212/65d3c015-d2e2-41e4-82ff-b1d2299bddda)
-![WhatsApp Image 2023-12-27 at 6 01 44 PM (1)](https://github.com/m-ali-hamza/curency_converter_app/assets/144528212/e911da41-aa21-42b7-a3a8-ab2b8dc4dd3e)
-![WhatsApp Image 2023-12-27 at 6 01 45 PM](https://github.com/m-ali-hamza/curency_converter_app/assets/144528212/e1f51fef-2398-44d6-b88e-30a72f1c5601)
+![Capture2](https://github.com/m-ali-hamza/curency_converter_app/assets/144528212/8e0b0154-4034-4eb0-948d-958c2731a0ab)
+![Capture3](https://github.com/m-ali-hamza/curency_converter_app/assets/144528212/766afc25-6df4-4c0a-9545-0ea9b368632f)
+![Capture4](https://github.com/m-ali-hamza/curency_converter_app/assets/144528212/e62a4939-65cc-435f-a7ef-a606b4ea1b85)
+![Capture5](https://github.com/m-ali-hamza/curency_converter_app/assets/144528212/b6fa1e0f-2846-41ae-8f94-23b5c4fe98a7)
 
 
 ## How to Run
