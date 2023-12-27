@@ -23,5 +23,5 @@ This Flutter app allows users to convert currencies easily.
 ## How to Run
 
 1. Clone the repository:
-   git clone https://github.com/your-username/my_currency_converter.git
+   git clone https://github.com/m-ali-hamza/curency_converter_app.git
 
